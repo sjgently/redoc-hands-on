@@ -4,16 +4,18 @@
   "private": true,
   "packageManager": "pnpm@8.12.0",
   "scripts": {
-    "start": "run-s build-docs serve",
-    "build-docs": "redocly build-docs specs/openapi.yaml --output dist/index.html",
+    "start": "run-s build serve",
+    "build": "redocly build-docs specs/openapi.yaml --output dist/index.html",
+    "lint": "redocly lint core",
     "serve": "http-server dist",
-    "lint": "redocly lint core"
+    "generate:types": "openapi-typescript \"specs/openapi.yaml\" --output generated/"
   },
   "dependencies": {
     "@redocly/cli": "^1.5.0",
     "npm-run-all2": "^6.1.1"
   },
   "devDependencies": {
-    "http-server": "^14.1.1"
+    "http-server": "^14.1.1",
+    "openapi-typescript": "^6.7.2"
   }
 }
