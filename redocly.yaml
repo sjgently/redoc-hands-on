@@ -1,0 +1,6 @@
+extends:
+  - recommended
+
+apis:
+  core:
+    root: "./src/openapi.yaml"
