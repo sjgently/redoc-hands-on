@@ -6,7 +6,8 @@
   "scripts": {
     "start": "run-s build-docs serve",
     "build-docs": "redocly build-docs src/openapi.yaml --output dist/index.html",
-    "serve": "http-server dist"
+    "serve": "http-server dist",
+    "lint": "redocly lint core"
   },
   "dependencies": {
     "@redocly/cli": "^1.5.0",
