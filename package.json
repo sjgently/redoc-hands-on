@@ -8,7 +8,7 @@
     "build": "redocly build-docs specs/openapi.yaml --output dist/index.html",
     "lint": "redocly lint core",
     "serve": "http-server dist",
-    "generate:types": "openapi-typescript \"specs/openapi.yaml\" --output generated/"
+    "generate:types": "openapi-typescript \"download/openapi.yaml\" --output generated/"
   },
   "dependencies": {
     "@redocly/cli": "^1.5.0",
