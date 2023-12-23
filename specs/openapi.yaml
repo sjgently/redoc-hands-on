@@ -36,16 +36,6 @@ externalDocs:
 components:
   schemas:
     $ref: "./components/schemas/index.yaml"
-  requestBodies:
-    Pet:
-      content:
-        application/json:
-          schema:
-            $ref: "#/components/schemas/Pet"
-        application/xml:
-          schema:
-            $ref: "#/components/schemas/Pet"
-      description: Pet object that needs to be added to the store
   securitySchemes:
     petstore_auth:
       type: oauth2
