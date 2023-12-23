@@ -3,4 +3,4 @@ extends:
 
 apis:
   core:
-    root: "./src/openapi.yaml"
+    root: "./specs/openapi.yaml"
